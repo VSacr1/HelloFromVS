@@ -223,6 +223,8 @@ namespace HelloFromVS
             Console.WriteLine(maxValue);
             int minValue = myNumbers.Min();
             Console.WriteLine(minValue);
+            int sumValue = myNumbers.Sum();
+            Console.WriteLine(sumValue);
         }
     }
 }
