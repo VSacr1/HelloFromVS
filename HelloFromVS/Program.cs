@@ -1,6 +1,5 @@
-﻿
-using System;
-using System.Linq;
+﻿using System;
+using System.IO;
 
 namespace HelloFromVS
 {
@@ -8,6 +7,14 @@ namespace HelloFromVS
     {
         static void Main(string[] args)
         {
+            //var currentDateAndTime = DateTime.Now;
+            //Console.WriteLine(currentDateAndTime.AddDays(5).DayOfWeek);
+            Console.WriteLine("Input a date: ");
+            var dateInput = Console.ReadLine();
+            var convertedDate = DateTime.Parse(dateInput);
+            Console.WriteLine(convertedDate);
+
+            #region CollapseMain
             //Console.WriteLine("What is your name? ");
             //var name = Console.ReadLine();
             //var date = DateTime.Now;
@@ -197,34 +204,114 @@ namespace HelloFromVS
             //double area = Math.PI * radius * radius;
 
             //Math.Pow(81, 1/3);
-            //string[] cars = { "Ford", "Vauxhaul", "Toyota", "Nissan" };
-            //string[] otherCars;
-            //foreach (var car in cars)
-            //{
-            //    Console.WriteLine(car);
-            //}
-            //otherCars = new string[4];
-            //otherCars[0] = "Mercedez";
-            //otherCars[1] = "Mazda";
-            //otherCars[2] = "Tesla";
-            //otherCars[3] = "Volvo";
-            //Array.Sort(otherCars);
-            //foreach (var car in otherCars)
-            //{
-            //    Console.WriteLine(car);
-            //}
-            //otherCars = new string[5];
-            //otherCars[4] = "Skoda";
-            //Console.WriteLine(otherCars[0]);
+            ////string[] cars = { "Ford", "Vauxhaul", "Toyota", "Nissan" };
+            ////foreach (var car in cars)
+            ////{
+            ////    Console.WriteLine(car);
+            ////}
+            ////string[] otherCars;
+            ////otherCars = new string[4];
+            ////otherCars[0] = "Mercedez";
+            ////otherCars[1] = "Mazda";
+            ////otherCars[2] = "Tesla";
+            ////otherCars[3] = "Volvo";
+            ////Array.Sort(otherCars);
+            ////foreach (var car in otherCars)
+            ////{
+            ////    Console.WriteLine(car);
+            ////}
+            ////otherCars = new string[5];
+            ////otherCars[4] = "Skoda";
+            ////Console.WriteLine(otherCars[0]);
 
-            int[] myNumbers = { 5, 1, 8, 9 };
-            //non-helped way - bubble sorting.
-            int maxValue = myNumbers.Max();
-            Console.WriteLine(maxValue);
-            int minValue = myNumbers.Min();
-            Console.WriteLine(minValue);
-            int sumValue = myNumbers.Sum();
-            Console.WriteLine(sumValue);
+            //int[] myNumbers = { 5, 1, 8, 9 };
+            ////non-helped way - bubble sorting.
+            //int maxValue = myNumbers.Max();
+            //Console.WriteLine(maxValue);
+            //int minValue = myNumbers.Min();
+            //Console.WriteLine(minValue);
+            //int sumValue = myNumbers.Sum();
+            //Console.WriteLine(sumValue);
+            //int a = 5, b = 4, c = a + b;
+            //int d = 7, e = 65, f = d + e;
+            //methods
+
+            //int a = 2, b = 4;
+            //int c = Add(a, b);
+            //Console.WriteLine($"{a}+{b}={c}");
+            //int d = Subtract(a, b);
+            //Console.WriteLine($"{a}-{b}={d}");
+
+            //double e = 7.8, f = 2.1;
+            //double g = Subtract(e, f);
+            //Console.WriteLine($"{e}-{f}={g}");
+            //int inputValue = 6;
+            ////var increasedValue=Increase(inputValue);
+            ////Console.WriteLine(increasedValue);
+            //Console.WriteLine(inputValue);
+            //Increase(ref inputValue);
+            //Console.WriteLine(inputValue);
+
+            //string exWrite = "\nIt is a good day. Nice and Easy";
+            //File.WriteAllText(@"C:\Dev\hello.txt", exWrite);
+            //File.AppendAllText(@"C:\Dev\hello.txt", exWrite);
+
+            //string readText = File.ReadAllText(@"C:\Dev\hello.txt");
+            //System.Console.WriteLine(readText);
+
+            //string OriginalFile = @"C:\Dev\test.txt";
+            //string FileToReplace = @"C:\Dev\test2.txt";
+            //string BackUpOfFileToReplace = @"C:\Dev\test2.txt.bac";
+
+            //Console.WriteLine("Move the contents of " + OriginalFile + " into " + FileToReplace + ", delete " + OriginalFile +
+            //                   ", and create a backup of " + FileToReplace + ".");
+
+            // Replace the file.
+            //ReplaceFile(OriginalFile, FileToReplace, BackUpOfFileToReplace);
+
+            //Console.WriteLine("Done");
+            #endregion
         }
+
+        #region Collapse
+        //public static void ReplaceFile(string FileToMoveAndDelete, string FileToReplace, string BackupOfFileToReplace)
+        //{
+        //    File.Replace(FileToMoveAndDelete, FileToReplace, BackupOfFileToReplace, false);
+        //}
+        //static int Increase(int inputValue)
+        //{
+        //    var addedValue = inputValue+=1;
+        //    return addedValue;
+        //}
+        //static void Increase(ref int inputValue)
+        //{
+        //    inputValue += 1;
+        //}
+        //static int Add(int firstValue, int secondValue)
+        //{
+        //    var addition = firstValue + secondValue;
+        //    return addition;
+        //}
+        //static int Subtract(int firstValue, int secondValue)
+        //{
+        //    var subtraction = firstValue - secondValue;
+        //    return Math.Abs(subtraction);
+        //}
+        //static double Subtract(double firstValue, double secondValue)
+        //{
+        //    var subtraction = firstValue - secondValue;
+        //    return Math.Abs(subtraction);
+        //}
+        //static double Subtract(double firstValue, int secondValue)
+        //{
+        //    var subtraction = firstValue - secondValue;
+        //    return Math.Abs(subtraction);
+        //}
+        //static double Subtract(int firstValue, double secondValue)
+        //{
+        //    var subtraction = firstValue - secondValue;
+        //    return Math.Abs(subtraction);
+        //}
+        #endregion
     }
 }
