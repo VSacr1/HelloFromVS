@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapy", "Shapy\Shapy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsAndGenerics", "CollectionsAndGenerics\CollectionsAndGenerics.csproj", "{F93171BB-7C6E-4924-8C44-CB983D8FB9E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{5D81F0FC-8FA8-4523-834A-F830FA8CBCA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvanadeBank", "AvanadeBank\AvanadeBank.csproj", "{60D80030-2247-407E-B692-4EB7777D7365}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{F93171BB-7C6E-4924-8C44-CB983D8FB9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F93171BB-7C6E-4924-8C44-CB983D8FB9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F93171BB-7C6E-4924-8C44-CB983D8FB9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D81F0FC-8FA8-4523-834A-F830FA8CBCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D81F0FC-8FA8-4523-834A-F830FA8CBCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D81F0FC-8FA8-4523-834A-F830FA8CBCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D81F0FC-8FA8-4523-834A-F830FA8CBCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D80030-2247-407E-B692-4EB7777D7365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D80030-2247-407E-B692-4EB7777D7365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D80030-2247-407E-B692-4EB7777D7365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D80030-2247-407E-B692-4EB7777D7365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
