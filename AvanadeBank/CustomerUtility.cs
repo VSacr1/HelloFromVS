@@ -70,6 +70,11 @@ namespace AvanadeBank
             }
             return returnString;
         }
+        /// <summary>
+        /// Get customer's details by passing in customer - Extension method
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public static string GetDetails(this Customer c)
         {
             return $"{c.FullName} with {c.Email} has a balance of {c.AccountBalance:c}. Account type: {c.AccountType}.";

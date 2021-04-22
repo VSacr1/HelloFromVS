@@ -39,10 +39,10 @@ namespace AvanadeBank
             //Console.WriteLine(currentCustomers.GetDetails());
 
             var customers = CustomerUtility.Customers;
-            //var firstCustomer = customers.FirstOrDefault(c => c.Email == "ja@sudo.com");
-            //Console.WriteLine(firstCustomer.GetDetails());
-            var orderedCustomers = customers.OrderBy(c => c.AccountBalance).ToList();
-            Console.WriteLine(orderedCustomers.GetDetails());
+            var firstCustomer = customers.FirstOrDefault(c => c.Email == "ja@sudo.com");
+            Console.WriteLine(firstCustomer.GetDetails());
+            //var orderedCustomers = customers.OrderBy(c => c.AccountBalance).ToList();
+            //Console.WriteLine(orderedCustomers.GetDetails());
         }
 
         private static void RegisterNewCustomer()
