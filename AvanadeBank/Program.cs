@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace AvanadeBank
 {
@@ -6,21 +7,42 @@ namespace AvanadeBank
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Avanade Bank. What would you like to do today?\n1 to open an account.\n2 to check your balance.\n3 to withraw cash.");
-            int userOperation = int.Parse(Console.ReadLine());
-            var userAction = (UserActions)userOperation;
-            switch (userAction)
-            {
-                case UserActions.OpenAccount:
-                    RegisterNewCustomer();
-                    break;
-                case UserActions.CheckBalance:
-                    break;
-                case UserActions.Withdraw:
-                    break;
-                default:
-                    break;
-            }
+            //Console.WriteLine("Welcome to Avanade Bank. What would you like to do today?\n1 to open an account.\n2 to check your balance.\n3 to withraw cash.");
+            //int userOperation = int.Parse(Console.ReadLine());
+            //var userAction = (UserActions)userOperation;
+            //switch (userAction)
+            //{
+            //    case UserActions.OpenAccount:
+            //        RegisterNewCustomer();
+            //        break;
+            //    case UserActions.CheckBalance:
+            //        break;
+            //    case UserActions.Withdraw:
+            //        break;
+            //    default:
+            //        break;
+            //}
+            //var customersWithBalanceGreaterThan50Pounds =
+            //    CustomerUtility.FindCustomerByBalanceGreaterThanThreshold(500, CustomerUtility.Customers);
+            //Console.WriteLine(customersWithBalanceGreaterThan50Pounds.GetDetails());
+
+            //var savingsCustomers = CustomerUtility.FindSavingsCustomers(CustomerUtility.Customers);
+            //Console.WriteLine(savingsCustomers.GetDetails()); 
+            //var currentCustomers = CustomerUtility.FindCurrentCustomers(CustomerUtility.Customers);
+            //Console.WriteLine(currentCustomers.GetDetails());
+
+            //var customersWithBalanceGreaterThan50Pounds = CustomerUtility.FindCustomers(CustomerUtility.Customers, c => c.AccountBalance > 50);
+            //Console.WriteLine(customersWithBalanceGreaterThan50Pounds.GetDetails());
+            //var savingsCustomers = CustomerUtility.FindCustomers(CustomerUtility.Customers, c => c.AccountType == AccountType.Savings);
+            //Console.WriteLine(savingsCustomers.GetDetails());
+            //var currentCustomers = CustomerUtility.FindCustomers(CustomerUtility.Customers, c => c.AccountType == AccountType.Current);
+            //Console.WriteLine(currentCustomers.GetDetails());
+
+            var customers = CustomerUtility.Customers;
+            //var firstCustomer = customers.FirstOrDefault(c => c.Email == "ja@sudo.com");
+            //Console.WriteLine(firstCustomer.GetDetails());
+            var orderedCustomers = customers.OrderBy(c => c.AccountBalance).ToList();
+            Console.WriteLine(orderedCustomers.GetDetails());
         }
 
         private static void RegisterNewCustomer()

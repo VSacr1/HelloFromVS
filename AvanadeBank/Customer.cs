@@ -8,6 +8,5 @@
         public string Email { get; set; }
         public AccountType AccountType { get; set; }
         public decimal AccountBalance { get; set; } = 0;
-
     }
 }
