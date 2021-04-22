@@ -11,8 +11,22 @@ namespace HelloFromVS
             //Console.WriteLine(currentDateAndTime.AddDays(5).DayOfWeek);
             Console.WriteLine("Input a date: ");
             var dateInput = Console.ReadLine();
-            var convertedDate = DateTime.Parse(dateInput);
-            Console.WriteLine(convertedDate);
+            try
+            {
+                var convertedDate = DateTime.Parse(dateInput);
+                Console.WriteLine(convertedDate);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Sorry, your input was in a bad format, please close the app and try again.");
+                //Log exception.
+                Console.WriteLine($"Technical details: {e.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("I will run under any circumstance");
+            }
+            //Research TryParse
 
             #region CollapseMain
             //Console.WriteLine("What is your name? ");
@@ -287,31 +301,31 @@ namespace HelloFromVS
         //{
         //    inputValue += 1;
         //}
-        //static int Add(int firstValue, int secondValue)
-        //{
-        //    var addition = firstValue + secondValue;
-        //    return addition;
-        //}
-        //static int Subtract(int firstValue, int secondValue)
-        //{
-        //    var subtraction = firstValue - secondValue;
-        //    return Math.Abs(subtraction);
-        //}
-        //static double Subtract(double firstValue, double secondValue)
-        //{
-        //    var subtraction = firstValue - secondValue;
-        //    return Math.Abs(subtraction);
-        //}
-        //static double Subtract(double firstValue, int secondValue)
-        //{
-        //    var subtraction = firstValue - secondValue;
-        //    return Math.Abs(subtraction);
-        //}
-        //static double Subtract(int firstValue, double secondValue)
-        //{
-        //    var subtraction = firstValue - secondValue;
-        //    return Math.Abs(subtraction);
-        //}
+        static int Add(int firstValue, int secondValue)
+        {
+            var addition = firstValue + secondValue;
+            return addition;
+        }
+        static int Subtract(int firstValue, int secondValue)
+        {
+            var subtraction = firstValue - secondValue;
+            return Math.Abs(subtraction);
+        }
+        static double Subtract(double firstValue, double secondValue)
+        {
+            var subtraction = firstValue - secondValue;
+            return Math.Abs(subtraction);
+        }
+        static double Subtract(double firstValue, int secondValue)
+        {
+            var subtraction = firstValue - secondValue;
+            return Math.Abs(subtraction);
+        }
+        static double Subtract(int firstValue, double secondValue)
+        {
+            var subtraction = firstValue - secondValue;
+            return Math.Abs(subtraction);
+        }
         #endregion
     }
 }
