@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrayz", "Exercises\Arrayz\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overloader", "Exercises\Overloader\Overloader.csproj", "{78E15350-1C41-4AD2-A479-378F6100D808}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFiles", "Exercises\DataFiles\DataFiles.csproj", "{2F0499C4-F8EA-4409-8797-A9D8D250602A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,10 @@ Global
 		{78E15350-1C41-4AD2-A479-378F6100D808}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78E15350-1C41-4AD2-A479-378F6100D808}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78E15350-1C41-4AD2-A479-378F6100D808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0499C4-F8EA-4409-8797-A9D8D250602A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0499C4-F8EA-4409-8797-A9D8D250602A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0499C4-F8EA-4409-8797-A9D8D250602A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0499C4-F8EA-4409-8797-A9D8D250602A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +150,7 @@ Global
 		{B1D85ECE-34B5-45C2-A23A-C2CC39B523E0} = {A3AACBF9-3705-448E-B450-815A645071A0}
 		{A5369A98-D9E3-4986-9C21-953D43AEDF94} = {A3AACBF9-3705-448E-B450-815A645071A0}
 		{78E15350-1C41-4AD2-A479-378F6100D808} = {A3AACBF9-3705-448E-B450-815A645071A0}
+		{2F0499C4-F8EA-4409-8797-A9D8D250602A} = {A3AACBF9-3705-448E-B450-815A645071A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BEA11F0-9C8C-4781-9FAA-017627D84B28}
