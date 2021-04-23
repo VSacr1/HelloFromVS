@@ -5,4 +5,16 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AvanadeBank\AvanadeBank.csproj" />
+    <ProjectReference Include="..\BankApp\BankApp.csproj" />
+    <ProjectReference Include="..\CarsInvetoryApp\CarsInvetoryApp.csproj" />
+    <ProjectReference Include="..\CollectionsAndGenerics\CollectionsAndGenerics.csproj" />
+    <ProjectReference Include="..\HelloFromVS\HelloFromVS.csproj" />
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+    <ProjectReference Include="..\Shapy\Shapy.csproj" />
+    <ProjectReference Include="..\StaticStuff\StaticStuff.csproj" />
+    <ProjectReference Include="..\UsingPackages\UsingPackages.csproj" />
+  </ItemGroup>
+
 </Project>
