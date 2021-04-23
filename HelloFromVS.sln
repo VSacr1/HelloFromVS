@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInput", "Exercises\User
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Exercises\Loops\Loops.csproj", "{4146B782-8FED-41EF-AAD6-6DB209C52845}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stringy", "Exercises\Stringy\Stringy.csproj", "{6F61941C-2F0A-4347-AE93-482368EEDAF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{4146B782-8FED-41EF-AAD6-6DB209C52845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4146B782-8FED-41EF-AAD6-6DB209C52845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4146B782-8FED-41EF-AAD6-6DB209C52845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F61941C-2F0A-4347-AE93-482368EEDAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F61941C-2F0A-4347-AE93-482368EEDAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F61941C-2F0A-4347-AE93-482368EEDAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F61941C-2F0A-4347-AE93-482368EEDAF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{CD928A5B-810E-4047-8798-BC40D7AA8E94} = {A3AACBF9-3705-448E-B450-815A645071A0}
 		{2CC668D3-C4BD-4128-AE8F-75E1A93BE729} = {A3AACBF9-3705-448E-B450-815A645071A0}
 		{4146B782-8FED-41EF-AAD6-6DB209C52845} = {A3AACBF9-3705-448E-B450-815A645071A0}
+		{6F61941C-2F0A-4347-AE93-482368EEDAF2} = {A3AACBF9-3705-448E-B450-815A645071A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BEA11F0-9C8C-4781-9FAA-017627D84B28}
